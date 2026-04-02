@@ -1,4 +1,4 @@
-import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { createSupabaseServerClient } from "@/src/lib/supabase/server";
 import { Suspense } from "react";
 
 async function InstrumentsData() {

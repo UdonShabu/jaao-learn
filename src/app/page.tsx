@@ -7,12 +7,15 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Button } from "@/components/ui/button";
+} from "@/src/components/ui/card"
+import { Button } from "@/src/components/ui/button";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations('HomePage');
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <h1>{t('title')}</h1>
       {/* <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
@@ -71,6 +74,7 @@ export default function Home() {
         </div>
       </main> */}
      <CardSmall/>
+
     </div>
   );
 }
@@ -83,7 +87,7 @@ export function CardSmall() {
       <CardHeader>
         <CardTitle>Small Card</CardTitle>
         <CardDescription>
-          This card uses the small size variant.
+          This card uses the small size variant.asd
         </CardDescription>
       </CardHeader>
       <CardContent>
